@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="images/shortcut.ico">
     <title>Мое резюме</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/slides.js"></script>
+    <script type="text/javascript" src="/js/slides.js"></script>
     <script type="text/javascript" src="/js/script.js" defer></script>
 </head>
 
@@ -24,6 +24,11 @@
             </ul>
         </div>
     </div>
+    <script>    
+        let userName = prompt("Введите ваше имя");
+        let userField = document.getElementById("UserId");
+        userField.innerText = "Пользователь: " + userName;
+    </script>
 
     <div class="slides">
         <ul class="slide-list">
