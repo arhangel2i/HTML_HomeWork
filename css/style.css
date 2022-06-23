@@ -17,10 +17,11 @@ html{
 }
 
 .container {
-    margin: -15px 50px 5px 50px;
+    margin: -5px 50px 5px 50px;
     background: #fffdfd;
     box-shadow: 5px 0px black;
     height: fit-content;
+    padding-top: 5px;
 }
 
 .header {
@@ -173,17 +174,17 @@ a:visited{
 }*/
 
 .slideitem img{
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 10px;
-    width: 600px;
+    width: 100%;
     height: 300px;
 }
 
 .slides{
     position: relative;
-    margin: 15px 50px;
-    width: 600px;
+    width: 50%;
     height: 300px;
+    margin-right: 10px;
 }
 
 .slide-list {
@@ -210,21 +211,21 @@ div.slide-left, div.slide-right {
   position: absolute;
   cursor: pointer;
   opacity: 0.6;
-  z-index: 4;
+  z-index: 5;
 }
 
-div.slide-left {
+.slide-left {
     left: 10px;
     top: 40%;
     display: block;
-    background: url("left-arrow.png") no-repeat;
+    background-image: url("left-arrow.png") no-repeat;
 }
 
-div.slide-right {
+.slide-right {
     right: 10px;
     top: 40%;
     display: block;
-    background: url("right-arrow.png") no-repeat;
+    background-image: url("right-arrow.png") no-repeat;
   }
 
   div.slide-left:hover {
@@ -256,8 +257,32 @@ div.slide-right {
     cursor: pointer;
   }
 
-  .achiv-item{
+  .achiv-item {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 21px;
-
+    font-size: 25px;
   }
+
+  .visualeffects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 50px;
+  }
+
+  .slides1 {
+    background-color: #ffffff;
+    position: relative;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .slide-zagl {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .tabletest {
+    width: 100%;
+  }
+
