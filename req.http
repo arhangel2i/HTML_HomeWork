@@ -1,0 +1,4 @@
+GET https://nalog.ru/
+
+###
+POST https://yandex.ru/search/?text=котики&lr=14
