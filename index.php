@@ -70,13 +70,14 @@ if ($link == false) {
                         <tr>
                             <th>id</th>
                             <th>name</th>
-                            <th>Comments</th>
+                            <th>age</th>
+                            <th>address</th>
                         </tr>
                         <?php
-                        $selectQuery = 'select * from cj14229_testdata.Main';
+                        $selectQuery = 'select * from cj14229_testdata.Test_table';
                         $resultQuery = $link->query($selectQuery);
                         while ($row = $resultQuery->fetch_assoc()) {
-                            echo "<tr><td>". $row['id']."</td><td>". $row['name']."</td><td>". $row['Comments']."</td></tr>";
+                            echo "<tr><td>". $row['id']."</td><td>". $row['name']."</td><td>". $row['age']."</td><td>". $row['address']."</td></tr>";
                         }
                         ?>
                     </table>
