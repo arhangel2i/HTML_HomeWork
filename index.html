@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="/js/slides.js"></script>
     <script type="text/javascript" src="/js/script.js" defer></script>
+    <script type="text/javascript" src="/js/data_loader.js" defer></script>
 </head>
 
 <body>
     <div class="header">
         <h1>Моё резюме</h1>
-        <h1 id="UserId">Пользователь: NoNome</h1>
+        <h1 id="UserId">Пользователь: NoName</h1>
         <div class="menu">
             <ul class="horlist ulhorstyle">
                 <li class="horlistitem"><a href="#info">Обо мне</a></li>
@@ -24,15 +25,15 @@
             </ul>
         </div>
     </div>
-    <script>    
-        let userName = prompt("Введите ваше имя");
+    <script>
+        // let userName = prompt("Введите ваше имя");
         let userField = document.getElementById("UserId");
         userField.innerText = "Пользователь: " + userName;
     </script>
 
     <div class="slides">
         <ul class="slide-list">
-            <li><img src="/images/screen.gif" alt="screen"></li>    <!-- это экран -->
+            <!-- <li><img src="/images/screen.gif" alt="screen"></li> -->
             <li class="slideitem"><img src="/images/c-sharp-log.png" class="block" alt="картинка программирование"></li>
             <li class="slideitem"><img src="/images/python-logo.png" alt="картинка программирование"></li>
             <li class="slideitem" ><img src="/images/java-logo.jpg" alt="картинка программирование"></li>
@@ -54,51 +55,22 @@
         </div>
         <div class="content">
             <p id="info">
-            <div class="mainname">Павлючик Юрий Васильевич</div>
+            <div class="mainname">Гай Юлий Цезаревич</div>
             <div class="infoitem">
                 <ul>
                     <li>Пол: Мужской</li>
                     <li>Возраст: 36 лет</li>
                 </ul>
                 <ul class="ulrightitem">
-                    <li>Телефон для контакта: +79806375666</li>
-                    <li>Электронная почта: arhangel2i@mail.ru</li>
+                    <li>Телефон для контакта: +7**********</li>
+                    <li>Электронная почта: a******@****.ru</li>
                 </ul>
             </div>
             </p>
             <hr />
-            <p id="myachievements">
-                Achivement Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at consequatur minus
-                provident ut. Nulla, sit? Voluptates quibusdam voluptatibus dolor non eius ipsa, est, quisquam nam illum
-                odio perspiciatis dolore!
-                Ex dolore provident quos ducimus, cum natus libero explicabo hic est vero quas, animi sit nostrum? Harum
-                numquam dolores recusandae sed optio! Voluptas laborum asperiores ea? Atque delectus quia debitis.
-                Illo repudiandae hic dicta! Natus laudantium, mollitia sit est similique dolor quasi doloribus optio
-                ipsam cupiditate dignissimos, enim facilis! Reprehenderit, molestiae ab! Quod quia repudiandae
-                recusandae doloribus facilis officiis ad.
-                Dolorum nam aliquid enim provident blanditiis, neque mollitia ipsam, dolor dicta ipsa quasi architecto
-                maiores expedita illo fugit nihil odio ex! Repellat nulla delectus facere doloribus rerum sequi, quos
-                autem?
-                Aliquam quis maxime in soluta ea, repellat iure qui dolorum eius veniam facere dolor aperiam commodi
-                molestiae odit deserunt corrupti vel laudantium voluptate alias reiciendis ipsum. Cupiditate
-                perspiciatis sunt quibusdam!
-                Et, pariatur voluptatum alias consequuntur possimus ea sequi dolorum, ipsum mollitia quia omnis earum
-                tempora, cum tempore repellat vero ab. Animi architecto cum veniam non ex corrupti perferendis quod
-                quisquam!
-                Aut, obcaecati architecto, provident quibusdam quaerat impedit perferendis natus officia labore minus
-                deserunt perspiciatis, deleniti accusantium quo omnis. Impedit velit provident laudantium dolorum minus
-                placeat quam cupiditate, quas assumenda hic?
-                Dicta, quaerat deleniti. Atque eius dolorem quia optio quos doloribus officia iste, nihil totam,
-                veritatis minima ipsam fugiat repudiandae dicta numquam itaque amet corporis sunt temporibus nam nobis
-                id molestiae.
-                Nostrum laudantium recusandae libero officia porro iure. Perferendis nulla eaque asperiores, dolore
-                totam, dolorem quod eius ea illum dolores vitae amet aliquid architecto vel corrupti nam. Repudiandae
-                labore debitis quaerat.
-                Nihil, ratione. Animi omnis atque harum incidunt suscipit ducimus porro recusandae accusantium est
-                doloremque quibusdam excepturi deleniti, placeat corporis facere! Et voluptatum praesentium neque nihil
-                architecto, distinctio voluptate nostrum libero?
-            </p>
-            <hr />
+            <div id="myachievements">
+            </div>
+            <hr/>
             <p id="contact">
                 contact Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at consequatur minus provident
                 ut. Nulla, sit? Voluptates quibusdam voluptatibus dolor non eius ipsa, est, quisquam nam illum odio
