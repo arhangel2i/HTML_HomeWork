@@ -20,6 +20,11 @@
     },
 
     {
+        "achivName":"HTML",
+        "level":"начальный"
+    },
+
+    {
         "achivName":"VBA (visual basic for application)",
         "level":"продвинутый"
     }

@@ -1,3 +1,16 @@
+<?php
+$data = include_once('datainfo.php');
+$dataInfo_left = $data['about_left'];
+$dataInfo_right = $data['about_right'];
+
+$link = mysqli_connect("localhost", "cj14229_testdata", "xra6MSGu");
+if ($link == false) {
+    echo "Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error();
+}
+// else {
+//     echo "Соединение установлено успешно";
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,25 +39,55 @@
         </div>
     </div>
     <script>
-        let userName = prompt("Введите ваше имя");
+        // let userName = prompt("Введите ваше имя");
         let userField = document.getElementById("UserId");
         userField.innerText = "Пользователь: " + userName;
     </script>
 
-    <div class="slides">
-        <ul class="slide-list">
-            <!-- <li><img src="/images/screen.gif" alt="screen"></li> -->
-            <li class="slideitem"><img src="/images/c-sharp-log.png" class="block" alt="картинка программирование"></li>
-            <li class="slideitem"><img src="/images/python-logo.png" alt="картинка программирование"></li>
-            <li class="slideitem" ><img src="/images/java-logo.jpg" alt="картинка программирование"></li>
-        </ul>
-        <div class="slide-left"></div>
-        <div class="slide-right"></div>
-        <div class="slide-dots"></div>
-        <script>new Sim()</script>
+    <div class="visualeffects">
+        <div class="slides">
+            <ul class="slide-list">
+                <!-- <li><img src="/images/screen.gif" alt="screen"></li> -->
+                <li class="slideitem"><img src="/images/c-sharp-log.png" class="block" alt="картинка программирование">
+                </li>
+                <li class="slideitem"><img src="/images/python-logo.png" alt="картинка программирование"></li>
+                <li class="slideitem"><img src="/images/java-logo.jpg" alt="картинка программирование"></li>
+            </ul>
+            <div class="slide-left"></div>
+            <div class="slide-right"></div>
+            <div class="slide-dots"></div>
+            <script>
+                new Sim()
+            </script>
+        </div>
+        <div class="slides1">
+            <div class="slide-zagl">
+                <div>Это блок с информацией подтянутой из SQL</div>
+                <hr />
+                <div>
+                    <table class="tabletest" border="1">
+                        <caption>Вывод результатов запроса</caption>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>Comments</th>
+                        </tr>
+                        <?php
+                        $selectQuery = 'select * from cj14229_testdata.Main';
+                        $resultQuery = $link->query($selectQuery);
+                        while ($row = $resultQuery->fetch_assoc()) {
+                            echo "<tr><td>". $row['id']."</td><td>". $row['name']."</td><td>". $row['Comments']."</td></tr>";
+                        }
+                        ?>
+                    </table>
+                </div>
+            </div>
+
+            <div class="mysqlcontent"></div>
+        </div>
     </div>
-    
-    
+
+
 
 
     <div class="container">
@@ -58,19 +101,25 @@
             <div class="mainname">Гай Юлий Цезаревич</div>
             <div class="infoitem">
                 <ul>
-                    <li>Пол: Мужской</li>
-                    <li>Возраст: 36 лет</li>
+                    <?php
+                    foreach ($dataInfo_left  as $value) {
+                        echo '<li>' . $value . '</li>';
+                    }
+                    ?>
                 </ul>
                 <ul class="ulrightitem">
-                    <li>Телефон для контакта: +7**********</li>
-                    <li>Электронная почта: a******@****.ru</li>
+                    <?php
+                    foreach ($dataInfo_right  as $value) {
+                        echo '<li>' . $value . '</li>';
+                    }
+                    ?>
                 </ul>
             </div>
             </p>
             <hr />
             <div id="myachievements">
             </div>
-            <hr/>
+            <hr />
             <p id="contact">
                 contact Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at consequatur minus provident
                 ut. Nulla, sit? Voluptates quibusdam voluptatibus dolor non eius ipsa, est, quisquam nam illum odio
