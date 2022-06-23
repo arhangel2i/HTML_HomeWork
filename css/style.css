@@ -17,7 +17,7 @@ html{
 }
 
 .container {
-    margin: 50px 50px 5px 50px;
+    margin: -15px 50px 5px 50px;
     background: #fffdfd;
     box-shadow: 5px 0px black;
     height: fit-content;
@@ -33,6 +33,8 @@ html{
     background: var(--backgroud);
     background: #fffdfd;
     box-shadow: 0px 0px black;
+    border-radius: 6px;
+    z-index: 5;
 }
 
 h1{
@@ -171,11 +173,8 @@ a:visited{
 }*/
 
 .slideitem img{
-    width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
     width: 600px;
     height: 300px;
 }
@@ -183,6 +182,8 @@ a:visited{
 .slides{
     position: relative;
     margin: 15px 50px;
+    width: 600px;
+    height: 300px;
 }
 
 .slide-list {
@@ -244,7 +245,7 @@ div.slide-right {
     text-align: center;
   }
   
-  span.slide-dot {
+  span.sim-dot {
     width: 10px;
     height: 10px;
     margin: 5px 7px;
@@ -253,4 +254,10 @@ div.slide-right {
     background-color: #BBB;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .achiv-item{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 21px;
+
   }

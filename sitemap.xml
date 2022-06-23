@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemap.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://cj14229.tmweb.ru</loc>
+        <lastmod>2022-06-23T15:26:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <image:image>
+            <image:loc>https://cj14229.tmweb.ru/images/c-sharp-log.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://cj14229.tmweb.ru/images/java-logo.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://cj14229.tmweb.ru/images/python-logo.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://cj14229.tmweb.ru/images/Main_photo.png</image:loc>
+        </image:image>
+    </url>
+</urlset>

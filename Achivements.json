@@ -1,0 +1,26 @@
+[
+    {
+        "achivName":"C#",
+        "level":"начальный"
+    },
+
+    {
+        "achivName":"Python",
+        "level":"начальный"
+    },
+
+    {
+        "achivName":"SQL/Transact-SQL",
+        "level":"продвинутый"
+    },
+
+    {
+        "achivName":"PHP",
+        "level":"начальный"
+    },
+
+    {
+        "achivName":"VBA (visual basic for application)",
+        "level":"продвинутый"
+    }
+]
